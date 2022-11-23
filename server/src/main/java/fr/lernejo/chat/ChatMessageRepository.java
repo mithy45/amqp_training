@@ -17,7 +17,7 @@ public class ChatMessageRepository {
 
     void addChatMessage(String message)
     {
-        if (lastTenMessage.size() >= 10)
+        if (lastTenMessage.size() >= 11)
             lastTenMessage.remove(0);
         lastTenMessage.add(message);
     }
